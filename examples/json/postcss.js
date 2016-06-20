@@ -1,11 +1,11 @@
 const fs = require('fs');
 const postcss = require('postcss');
 const css = fs.readFileSync('./sample.css', 'utf8');
-const objectVars = require('../..');
+const defineIt = require('../..');
 const vars = require('./vars');
 
 var output = postcss()
-  .use(objectVars(vars))
+  .use(defineIt(vars))
   .process(css)
   .css;
 

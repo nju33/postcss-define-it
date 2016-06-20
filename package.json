@@ -1,14 +1,14 @@
 {
-  "name": "postcss-cson-cssvars",
-  "description": "PostCSS plugin  that read cson file to variable",
-  "version": "0.0.11",
+  "name": "postcss-define-it",
+  "description": "PostCSS plugin that to define and be able to use",
+  "version": "0.0.1",
   "author": {
     "name": "nju33",
     "email": "sski0155+npm@gmail.com",
     "url": "http://nju33.work/"
   },
   "bugs": {
-    "url": "https://github.com/totora0155/postcss-cson-cssvars/issues"
+    "url": "https://github.com/totora0155/postcss-define-it/issues"
   },
   "dependencies": {
     "lodash": "^4.13.1",
@@ -40,8 +40,10 @@
     "xo": "^0.16.0",
     "yamljs": "^0.2.7"
   },
-  "homepage": "https://github.com/totora0155/postcss-cson-cssvars#readme",
+  "homepage": "https://github.com/totora0155/postcss-define-it#readme",
   "keywords": [
+    "json",
+    "yaml",
     "cson",
     "css",
     "postcss",
@@ -51,7 +53,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:totora0155/postcss-cson-cssvars.git"
+    "url": "git@github.com:totora0155/postcss-define-it.git"
   },
   "scripts": {
     "build": "gulp babel",
