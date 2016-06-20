@@ -1,8 +1,0 @@
-.test {
-  padding: 5em;
-}
-
-&:before {
-  content: "$";
-  margin-rigth: 0;
-}

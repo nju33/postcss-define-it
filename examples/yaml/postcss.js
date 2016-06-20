@@ -1,11 +1,13 @@
 const fs = require('fs');
+
 const postcss = require('postcss');
 const YAML = require('yamljs');
-const css = fs.readFileSync('./sample.css', 'utf8');
 const defineIt = require('../..');
+
+const css = fs.readFileSync('./sample.css', 'utf8');
 const vars = YAML.load('./vars.yml');
 
-var output = postcss()
+const output = postcss()
   .use(defineIt(vars))
   .process(css)
   .css;

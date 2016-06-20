@@ -4,14 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _fs = require('fs');
-
-var _fs2 = _interopRequireDefault(_fs);
-
-var _path = require('path');
-
-var _path2 = _interopRequireDefault(_path);
-
 var _postcss = require('postcss');
 
 var _postcss2 = _interopRequireDefault(_postcss);
@@ -26,7 +18,7 @@ exports.default = _postcss2.default.plugin('postcss-object-vars', function () {
   let vars = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
 
   const _process = process.bind(null, vars);
-  return (css, result) => {
+  return css => {
     css.replaceValues(/.+/, { fast: '$' }, _process);
     css.walkAtRules(_process);
   };
@@ -62,7 +54,6 @@ function process(vars, target) {
   if (isAt()) {
     target.params = result;
     return target;
-  } else {
-    return result;
   }
-};
+  return result;
+}

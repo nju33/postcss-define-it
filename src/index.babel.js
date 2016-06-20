@@ -1,11 +1,9 @@
-import fs from 'fs';
-import path from 'path';
 import postcss from 'postcss';
 import _ from 'lodash';
 
 export default postcss.plugin('postcss-object-vars', (vars = {}) => {
-  const _process = process.bind(null, vars)
-  return (css, result) => {
+  const _process = process.bind(null, vars);
+  return css => {
     css.replaceValues(/.+/, {fast: '$'}, _process);
     css.walkAtRules(_process);
   };
@@ -14,11 +12,11 @@ export default postcss.plugin('postcss-object-vars', (vars = {}) => {
 function process(vars, target) {
   const isAt = () => {
     return target.constructor.name === 'AtRule';
-  }
+  };
   const re = /\$[^\s)/]+/g;
   let _target = null;
   if (isAt()) {
-     _target = target.params;
+    _target = target.params;
   }
   let result = _target || target;
   let matches = null;
@@ -40,7 +38,6 @@ function process(vars, target) {
   if (isAt()) {
     target.params = result;
     return target;
-  } else {
-    return result;
   }
-};
+  return result;
+}

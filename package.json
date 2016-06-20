@@ -59,5 +59,24 @@
     "build": "gulp babel",
     "start": "gulp watch",
     "test": "xo && ava"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "xo": {
+    "env": [
+      "node"
+    ],
+    "esnext": true,
+    "space": 2,
+    "ignores": [
+      "build/**"
+    ]
   }
 }

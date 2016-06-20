@@ -1,3 +1,4 @@
+'use strict';
 module.exports = {
   fontSize: '1em',
   background: '#fff',
@@ -9,13 +10,13 @@ module.exports = {
 
   color: {
     base: '#f8f8f8',
-    sub: '#CB4042',
+    sub: '#cb4042',
     main: '#34bebc'
   },
 
   pathto: '/path/to',
 
-  char: '\2713',
+  char: '\\2713',
 
   widths: [
     '415px',
