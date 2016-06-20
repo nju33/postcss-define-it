@@ -17,6 +17,8 @@ module.exports = {
 
   char: '\2713',
 
-  maxWidth: '767px',
-  minWidth: '768px'
+  widths: [
+    '415px',
+    '768px'
+  ]
 };

@@ -17,6 +17,5 @@
   content: "$char : ";
 }
 
-@media screen and (max-width: $maxWidth) and (min-width: $minWidth) {
-  .test {}
-}
+@media screen and (min-width: $widths[0]) {}
+@media screen and (min-width: $widths[1]) {}

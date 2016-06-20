@@ -54,8 +54,8 @@
     "url": "git@github.com:totora0155/postcss-cson-cssvars.git"
   },
   "scripts": {
-    "build": "coffee -o ./ -c src/index.coffee",
-    "test": " mocha --compilers \"--compilers coffee:coffee-script/register\"  test/*",
-    "watch": "coffee -w -o ./ -c src/index.coffee"
+    "build": "gulp babel",
+    "start": "gulp watch",
+    "test": "xo && ava"
   }
 }
