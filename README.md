@@ -1,5 +1,6 @@
 # PostCSS Define It
 
+[![npm version](https://badge.fury.io/js/postcss-define-it.svg)](https://badge.fury.io/js/postcss-define-it)
 [![Build Status](https://travis-ci.org/totora0155/postcss-define-it.svg?branch=master)](https://travis-ci.org/totora0155/postcss-define-it)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
