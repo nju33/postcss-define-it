@@ -56,6 +56,7 @@
     "url": "git@github.com:totora0155/postcss-define-it.git"
   },
   "scripts": {
+    "prepublish": "gulp babel",
     "build": "gulp babel",
     "start": "gulp watch",
     "test": "xo && ava"

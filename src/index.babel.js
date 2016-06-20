@@ -1,7 +1,7 @@
 import postcss from 'postcss';
 import _ from 'lodash';
 
-export default postcss.plugin('postcss-object-vars', (vars = {}) => {
+export default postcss.plugin('postcss-define-it', (vars = {}) => {
   const _process = process.bind(null, vars);
   return css => {
     css.replaceValues(/.+/, {fast: '$'}, _process);
