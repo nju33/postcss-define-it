@@ -1,0 +1,14 @@
+fontSize: 1em
+background: #fff
+
+top: 1em
+right: 2em
+bottom: 3em
+left: 4em
+
+pathto: /path/to
+
+char: \2713
+
+maxWidth: 767px
+minWidth: 768px
