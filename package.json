@@ -1,7 +1,7 @@
 {
   "name": "postcss-define-it",
   "description": "PostCSS plugin that to define and be able to use",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "nju33",
     "email": "sski0155+npm@gmail.com",

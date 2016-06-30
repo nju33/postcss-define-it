@@ -17,6 +17,9 @@ function process(vars, target) {
   let _target = null;
   if (isAt()) {
     _target = target.params;
+    if (_target === '') {
+      return;
+    }
   }
   let result = _target || target;
   let matches = null;

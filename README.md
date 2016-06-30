@@ -112,3 +112,10 @@ postcss([defineIt(vars)])
 @media screen and (min-width: 768px) {}
 @media screen and (min-width: $widths[2]) {}
 ```
+
+### Change log
+
+|version|log|
+|:-:|:--|
+|0.0.2|Fix `Maximum call stack size exceeded`|
+|0.0.1|Release|
